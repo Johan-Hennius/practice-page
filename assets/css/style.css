@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Position Practice */
+section {
+    background-color: blue;
+    padding: .25em;
+    font-size: 2em;
+}
+
+h1 {
+    margin: 0;
+    padding: .25em 0;
+}
+
+.child-one {
+    background-color: blueviolet;
+    padding: .25em
+}
+
+.child-two {
+    background-color: green;
+    padding: .25em
+}
+
+.child-three {
+    background-color: pink;
+    padding: .25em
+}
