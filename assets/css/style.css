@@ -5,12 +5,6 @@
 }
 
 /* Position Practice */
-section {
-    background-color: blue;
-    padding: .25em;
-    font-size: 2em;
-    display: none;
-}
 
 h1 {
     margin: 0;
@@ -19,6 +13,9 @@ h1 {
 
 .parent {
     position: relative;
+    background-color: blue;
+    padding: .25em;
+    font-size: 2em;
 }
 
 .child-one {
@@ -41,11 +38,18 @@ h1 {
 /* Flexbox Practice */
 .nav-list {
     display: flex;
+    justify-content: space-between;
+    gap: 1rem;
 
     margin: 0;
     padding: 0;
     list-style: none;
     background-color: black;
+}
+
+.nav-list li {
+    /* flex-grow: 1; */
+    flex-shrink: 1;
 }
 
 a {
@@ -56,4 +60,40 @@ a {
 li {
     padding: .5em;
     border: 1px solid blue;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+
+
+    border: 10px solid orange;
+}
+
+.columns > * {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+}
+
+.card:nth-child(2) {
+    background-color: pink;
+    align-self: flex-end;
+}
+
+.card {
+    padding: .25em;
+    margin: 0;
+    background-color: green;
+}
+
+h2 {
+    padding: .1em;
+    margin: 0;
+}
+
+p {
+    margin: 0;
 }
