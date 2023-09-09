@@ -9,6 +9,7 @@ section {
     background-color: blue;
     padding: .25em;
     font-size: 2em;
+    display: none;
 }
 
 h1 {
@@ -16,17 +17,25 @@ h1 {
     padding: .25em 0;
 }
 
+.parent {
+    position: relative;
+}
+
 .child-one {
     background-color: blueviolet;
-    padding: .25em
+    position: sticky;
+    padding: .5em;
+    top: 0px;
 }
 
 .child-two {
     background-color: green;
-    padding: .25em
+    padding: .5em;
 }
 
 .child-three {
     background-color: pink;
-    padding: .25em
+    padding: .5em;
 }
+
+/* Flexbox Practice */
