@@ -21,26 +21,56 @@
 
 <body>
 
-    <main class="container">
-        <div class="row min-vh-100 d-flex justify-content-center align-items-center">
-        <form class="col-10 col-md-8 col-lg-6 form-wrapper d-flex flex-column">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-8 col-lg-6 text-center">
+                    <h1>Practice Form</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam facere
+                        reprehenderit
+                        porro. Illum,
+                        iusto ratione!</p>
+                </div>
             </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+            <div class="row justify-content-center my-3">
+                <div class="col-10 col-md-8 col-lg-6">
+                    <form>
+
+                        <label for="email" class="form-label">Email address</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><strong>N</strong></span>
+                            <input type="email" class="form-control" id="email" placeholder="jimmy@example.com"
+                                required>                            
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="fname" placeholder="First name" required>
+                            <label for="fname">First name</label>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="subject" class="form-label">What are you talking bout?</label>
+                            <select name="subject" id="" class="form-select">
+                                <option value="pricing">Pricing query</option>
+                                <option value="content">Content query</option>
+                                <option value="other">Other query</option>
+                            </select>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <textarea name="query" id="query" style="height: 100px;" class="form-control"
+                                placeholder="Your text"></textarea>
+                            <label for="query" class="">Your text</label>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-primary btn-lg">Submit</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary mx-auto">Submit</button>
-          </form>
         </div>
-    </main>
+    </section>
 
 </body>
 
