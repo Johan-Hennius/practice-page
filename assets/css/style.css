@@ -28,9 +28,33 @@ body {
 
 
 
+.transform-box {
+  background-color: black;
+  color: white; 
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0 auto;
+}
 
+.transform-box {
+  transform: translate(100%);
+}
 
-
+.ctrl-box {
+  background-color: rgb(165, 165, 165);
+  color: white; 
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0 auto;
+}
 
 
 
